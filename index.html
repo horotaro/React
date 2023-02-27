@@ -46,11 +46,11 @@
           super();
           this.state = {
             counters: [
-            {id: 'A', count: 0, color: 'tomato'},
-            {id: 'B', count: 0, color: 'skyblue'},
-            {id: 'C', count: 0, color: 'limegreen'},
-            {id: 'D', count: 0, color: 'gray'},
-            {id: 'E', count: 0, color: 'pink'}
+            {id: '男性:子ども', count: 0, color: 'tomato'},
+            {id: '男性:大人', count: 0, color: 'skyblue'},
+            {id: '女性:子ども', count: 0, color: 'limegreen'},
+            {id: '女性:大人', count: 0, color: 'pink'},
+            {id: '不明', count: 0, color: 'gray'}
             ],
             total: 0
           };
@@ -80,7 +80,7 @@
                 counters={this.state.counters}
                 countUp={this.countUp}
                 />
-          <div>TOTAL INVENTORY: {this.state.total}</div>
+          <div>TOTAL: {this.state.total}</div>
         </div>
           );
         }
